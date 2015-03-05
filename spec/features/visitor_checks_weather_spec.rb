@@ -27,16 +27,16 @@ feature 'Visitor checks the weather' do
 		expect(page).to have_content("Bring your umbrella and galoshes!")
 	end
 
-	# scenario 'snowy' do
-	# 	#setup
-	# 	visit root_path
+	scenario 'snowy' do
+		#setup
+		visit root_path
 
-	# 	#exercise
-	# 	fill_in "What's your zipcode", with: "96701"
-	# 	click_button "Is it going to rain?"
+		#exercise
+		fill_in "What's your zipcode", with: "96710"
+		click_button "Is it going to rain?"
 
-	# 	#verify
-	# 	expect(page).to have_content("Super snowy.")
-	# 	expect(page).to have_content("You need more than an umbrella! Bring your snowsuit.")
-	# end
+		#verify
+		expect(page).to have_content("Super snowy.")
+		expect(page).to have_content("You need more than an umbrella! Bring your snowsuit.")
+	end
 end

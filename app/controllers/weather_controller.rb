@@ -12,9 +12,9 @@ class WeatherController < ApplicationController
 		if zipcode == '87111'
 			@raining = true
 		end
-		# if zipcode == '96710'
-		# 	@snowing = true
-		# end
+		if zipcode == '96710'
+			@snowing = true
+		end
 		#cookies[:zipcode] = params[:zipcode]
 	end
 
